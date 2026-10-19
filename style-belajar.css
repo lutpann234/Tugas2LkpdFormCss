@@ -51,10 +51,4 @@ body{
     border-radius: 6px;
     font-size: 15px;
     cursor: pointer;
-    display: block;
-    position: relative;
-    z-index: 10;
-}
-.form-box button:hover{
-    background-color: #1a4fd8;
 }

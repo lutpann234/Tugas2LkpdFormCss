@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Registrasi Akun Belajar</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-belajar.css">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="registrasi.css">
 </head>
 <body>
-    <div class="form-box">
-        <h3>Registrasi Akun Belajar</h3>
-        <p class="desc">Lengkapi formulir di bawah ini dengan benar</p>
 
-        <label>Nama Lengkap</label>
-        <input type="text" placeholder="Masukkan nama lengkap">
+    <div class="form-container">
+        <h2>Registrasi Akun Belajar</h2>
+        <p class="subtitle">
+            Lengkapi formulir di bawah ini dengan benar.
+        </p>
 
-        <label>Alamat Email</label>
-        <input type="text" placeholder="nama@contoh.com">
+        <form>
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap" required>
 
-        <label>Kata Sandi</label>
-        <input type="text" placeholder="Minimal 8 karakter">
+            <label>Alamat Email</label>
+            <input type="email" placeholder="nama@contoh.com" required>
 
-        <label>Konfirmasi Kata Sandi</label>
-        <input type="text" placeholder="Ulangi kata sandi">
+            <label>Kata Sandi</label>
+            <input type="password" placeholder="Minimal 8 karakter"
+                   minlength="8" required>
 
-        <label>Status Pengguna</label>
-        <select>
-            <option>Pilih status</option>
-            <option>Pelajar</option>
-            <option>Guru</option>
-        </select>
+            <label>Konfirmasi Kata Sandi</label>
+            <input type="password" placeholder="Ulangi kata sandi" required>
 
-        <button type="button" onclick="alert('Pendaftaran Berhasil')">Daftar</button>
+            <label>Status Pengguna</label>
+            <select required>
+                <option value="">Pilih status</option>
+                <option value="siswa">Siswa</option>
+                <option value="guru">Guru</option>
+                <option value="mahasiswa">Mahasiswa</option>
+                <option value="umum">Umum</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
     </div>
+
 </body>
 </html>
